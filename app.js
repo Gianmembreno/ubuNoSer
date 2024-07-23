@@ -7,8 +7,8 @@ const port = 3000;
 
 app.use('/users', userRoutes);
 
-app.listen(port, () => {
-    console.log(`App running on http://localhost:${port}`);
+app.listen(port, '0.0.0.0', () => {
+    console.log(`App running on http://0.0.0.0:${port}`);
 });
 
 // Close the database connection
